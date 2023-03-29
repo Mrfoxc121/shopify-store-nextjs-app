@@ -2,11 +2,11 @@ import Head from "next/head";
 import { Inter } from "next/font/google";
 import { getProductsInCollection } from "../../lib/shopify";
 import ProductList from "../../components/ProductList";
+import Hero from "../../components/Hero";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home({ products }) {
-  console.log(products);
   return (
     <>
       <Head>
@@ -16,6 +16,7 @@ export default function Home({ products }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
+      <Hero />
         <ProductList products={products} />
       </main>
     </>
