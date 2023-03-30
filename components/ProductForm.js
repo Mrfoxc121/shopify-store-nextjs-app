@@ -72,7 +72,6 @@ export default function ProductForm({ product }) {
                     />
                 ))
             }
-            <p className='mt-3'>{product.description}</p>
             <button
             onClick={() => {
                 addToCart(selectedVariant)
