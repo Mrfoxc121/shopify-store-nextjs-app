@@ -15,7 +15,7 @@ export default function Footer() {
                 {
                     navigation.map((item, i) => (
                         <div key={i} className="px-6 py-2">
-                            <a href={item.href} className="text-gray-600 hover:text-rose-500">
+                            <a href={item.href} className="text-gray-900 hover:text-rose-500">
                                 {item.name}
                             </a>
                         </div>
@@ -23,7 +23,7 @@ export default function Footer() {
                 }
             </nav>
             <div className="flex items-center justify-center space text-gray-400 mt-4">
-               <p className="copyright">Copyright &copy; 2023 - All rights reserved - <Link className="hover:text-rose-700" href="http://www.jamesjensonwebsolutions.space" target="_blank">www.jamesjensonwebsolutions.space</Link></p> 
+               <p className="copyright text-gray-900">Copyright &copy; 2023 - All rights reserved - <Link className="hover:text-rose-900" href="http://www.jamesjensonwebsolutions.space" target="_blank">www.jamesjensonwebsolutions.space</Link></p> 
             </div>
         </div>
     </footer>
